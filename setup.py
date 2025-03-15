@@ -73,7 +73,7 @@ setup(
     description='AI Project',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='',
+    url='https://github.com/diogocorreia01/ai_project',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
