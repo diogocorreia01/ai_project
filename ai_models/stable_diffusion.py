@@ -2,6 +2,7 @@ from diffusers import StableDiffusionXLPipeline
 import torch
 import uuid
 import os
+import time
 
 class StableDiffusionAI:
     def __init__(self):
@@ -23,11 +24,17 @@ class StableDiffusionAI:
 
         print(f"Generating image for prompt: {prompt}")
 
-        # Generate image
+        # Simulate the image generation with progress (for illustration)
+        steps = 50  # Adjust to match the number of processing steps
+        for i in range(steps):
+            time.sleep(0.1)  # Simulate the processing time per step
+
+        # Generate image (simulate the actual processing)
         image = self.pipe(prompt).images[0]
 
         # Save and display the image
         image.save(output_path)
         image.show()
+
         print(f"Image saved at: {output_path}")
         return output_path

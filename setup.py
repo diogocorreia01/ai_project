@@ -66,7 +66,8 @@ setup(
         'urllib3==2.3.0',
         'Werkzeug==3.1.3',
         'wrapt==1.17.2',
-        'zipp==3.21.0'
+        'zipp==3.21.0',
+        'tk==0.1.0'
     ],
     author='Diogo Correia',
     author_email='diogo.f.correia@protonmail.com',
